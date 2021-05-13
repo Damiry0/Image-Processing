@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "../inc/konturowanie.h"
+#include "../inc/filtry.h"
 #include "../inc/czytaj.h"
-#include "../inc/progowanie.h"
 #include "../inc/struct.h"
 
 #define MAX 512       /* Maksymalny rozmiar wczytywanego obrazu */

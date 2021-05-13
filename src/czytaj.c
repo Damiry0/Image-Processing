@@ -1,7 +1,6 @@
 #include "../inc/czytaj.h"
 #include "../inc/struct.h"
 #include "../inc/konturowanie.h"
-#include "../inc/progowanie.h"
 
 int odczytano = 0;
 char nazwa[100];
