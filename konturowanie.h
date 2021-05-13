@@ -6,6 +6,6 @@ void konturowanie();
 int ppm_pgm();
 void Negatyw();
 
-#include <stdlib.h>
+
 #endif
 
