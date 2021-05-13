@@ -6,25 +6,6 @@
 #include "../inc/czytaj.h"
 #include "../inc/struct.h"
 
-#define MAX 512       /* Maksymalny rozmiar wczytywanego obrazu */
-#define DL_LINII 1024 /* Dlugosc buforow pomocniczych */
-#define W_OK 0                   /* wartosc oznaczajaca brak bledow */
-#define B_NIEPOPRAWNAOPCJA -1    /* kody bledow rozpoznawania opcji */
-#define B_BRAKNAZWY   -2
-#define B_BRAKWARTOSCI  -3
-#define B_BRAKPLIKU   -4
-
-
-int czytaj(FILE *plik_we, t_obraz *obraz);
-int wyswietl(char *n_pliku); // funkcja zmieniona z funkcji void na int aby program nie zamykał się automatycznie po wyświetleniu obrazu
-void zapis(t_obraz *obraz, char *nazwa, char *wynik, int RodzPlik); // zamien Odczytano na rodzaj pliku
-void konturowanie(t_obraz *obraz,int odczytano);  // odczytano- przechowuje informacje o tym jakim typem plikow mamy do czynienia
-void Negatyw(t_obraz *obraz,int odczytano);
-void Progowanie(t_obraz *obraz, int prog,int odczytano);
-void PolProgowanieCzerni(t_obraz *obraz, int prog,int odczytano);
-void PolProgowanieBieli(t_obraz *obraz, int prog,int odczytano);
-int ppm_pgm(t_obraz *obraz,int odczytano); // funckja przeksztalcajaca obraz ppm do pgm
-int przetarzaj_opcje(int argc, char **argv, w_opcje *wybor,t_obraz *t_obraz); 
 
 int main(int argc, char ** argv)
 {
