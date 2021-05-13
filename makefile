@@ -1,17 +1,17 @@
-all:myapp
+__start__: ./myapp
+		./myapp
 
-myapp: odczyt1.o konturowanie.o czytaj.o progowanie.o 
-	gcc -Wall -o myapp odczyt1.o konturowanie.o czytaj.o progowanie.o 
-odczyt1.o: odczyt1.c
-	gcc -c -Wall odczyt1.c
-konturowanie.o: konturowanie.c
-	gcc -c -Wall konturowanie.c
-czytaj.o: czytaj.c
-	gcc -c -Wall czytaj.c
-progowanie.o: progowanie.c
-	gcc -c -Wall progowanie.c
+./myapp: obj obj/odczyt1.o obj/filtry.o obj/czytaj.o  
+	gcc -Wall -pedantic -o ./myapp obj/odczyt1.o obj/filtry.o obj/czytaj.o  
+
+obj:
+	mkdir -p obj
+
+obj/odczyt1.o:  src/odczyt1.c
+	gcc -c -pedantic -Wall src/odczyt1.c
+obj/filtry.o: inc/filtry.h src/filtry.c
+	gcc -c -pedantic -Wall src/filtry.c
+obj/czytaj.o: inc/czytaj.h src/czytaj.c
+	gcc -c -pedantic -Wall src/czytaj.c
 clean:
-	rm odczyt1.o  
-	rm konturowanie.o 
-	rm czytaj.o 
-	rm progowanie.o 
+	rm -f obj/*.o ./myapp
