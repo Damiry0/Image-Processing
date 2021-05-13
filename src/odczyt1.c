@@ -1,11 +1,11 @@
-// Damian Ryś 26.12.2019 nr indeksu 252936 mama nie byla zła za programowanie w swieta
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#include "konturowanie.h"
-#include "czytaj.h"
-#include "progowanie.h"
-#include "struct.h"
+
+#include "../inc/konturowanie.h"
+#include "../inc/czytaj.h"
+#include "../inc/progowanie.h"
+#include "../inc/struct.h"
 
 #define MAX 512       /* Maksymalny rozmiar wczytywanego obrazu */
 #define DL_LINII 1024 /* Dlugosc buforow pomocniczych */

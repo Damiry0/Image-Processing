@@ -1,5 +1,5 @@
-#include "progowanie.h"
-#include "struct.h"
+#include "../inc/progowanie.h"
+#include "../inc/struct.h"
 
 /*******************************************************/
 /* Funckja przetwarzania obrazu wykonujaca operacje    */
