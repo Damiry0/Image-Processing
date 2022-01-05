@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "czytaj.h": "c",
-        "konturowanie.h": "c",
-        "progowanie.h": "c",
-        "struct.h": "c"
-    }
-}
