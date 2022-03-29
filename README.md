@@ -19,7 +19,7 @@ Where:
 ```
 ## Example:
 ```
-./myapp -i kubus.pgm -n -o kubus_output.pgm
+./myapp -i kubus.ppm -n -o kubus_output.pgm
 ```
 
 Before             |  After
