@@ -5,6 +5,7 @@ Small C script to manipulate pgm/ppm photos with various effectts:
 ## Usage
 Run in terminal:
 ```
+make
 ./myapp -i <filename> [-k -n -d -o <filename>]
 ```
 Where:
